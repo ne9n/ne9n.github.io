@@ -20,7 +20,8 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Industries</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -29,32 +30,76 @@
     <main>
         <section class="hero" id="home">
             <div class="hero-content reveal">
-                <h1 class="reveal">Building <span class="gradient-text">Digital</span> Masterpieces.</h1>
-                <p class="reveal">I'm ne9n, a creative developer focused on crafting premium, high-performance web experiences that leave a lasting impression.</p>
+                <h1 class="reveal">Engineering <span class="gradient-text">Industrial</span> Intelligence.</h1>
+                <p class="reveal">I am David Siegler (NE9N), a seasoned Embedded Systems Architect & Technical Leader with 20+ years of experience in Industrial Automation and Power Systems.</p>
                 <div class="hero-btns reveal">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#about" class="btn btn-primary">Explore My Expertise</a>
                 </div>
             </div>
         </section>
 
         <section class="container" id="about">
             <div class="reveal">
-                <h2 style="font-size: 3rem; margin-bottom: 3rem;">About <span class="gradient-text">Me</span></h2>
+                <h2 style="font-size: 3rem; margin-bottom: 2rem;">Professional <span class="gradient-text">Profile</span></h2>
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; margin-bottom: 4rem;">
+                    <div>
+                        <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8;">
+                            A Physics and Math-driven engineer specializing in <strong>Industrial Automation</strong>, <strong>Variable Speed Drives</strong>, and <strong>Embedded Systems</strong>. I leverage non-conventional methods to solve complex problems across Motion Control, Wind, and Solar energy sectors.
+                        </p>
+                        <br>
+                        <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8;">
+                            My career spans 20+ years of technical leadership, managing large multi-location teams through Agile and V-model methodologies. I am deeply involved in the entire lifecycle of industrial products—from design and manufacturing to delivery and global support.
+                        </p>
+                    </div>
+                    <div class="glass card" style="padding: 1.5rem;">
+                        <h4 style="margin-bottom: 1rem;">Memberships</h4>
+                        <ul style="list-style: none; color: var(--text-secondary); font-size: 0.9rem;">
+                            <li style="margin-bottom: 0.5rem;"><i data-lucide="radio" style="width: 14px; vertical-align: middle; margin-right: 8px;"></i> Extra Class HAM (NE9N)</li>
+                            <li style="margin-bottom: 0.5rem;"><i data-lucide="plane" style="width: 14px; vertical-align: middle; margin-right: 8px;"></i> AMA (720731)</li>
+                            <li style="margin-bottom: 0.5rem;"><i data-lucide="award" style="width: 14px; vertical-align: middle; margin-right: 8px;"></i> EAA (1231299)</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="grid">
                     <div class="card glass">
-                        <i data-lucide="code-2" class="card-icon"></i>
-                        <h3>Development</h3>
-                        <p>Crafting robust backends and interactive frontends with modern technologies like React, Next.js, and Node.js.</p>
+                        <i data-lucide="cpu" class="card-icon"></i>
+                        <h3>Embedded Systems</h3>
+                        <p>Specializing in firmware development for industrial products, with a focus on 'C', C++, and real-time connectivity issues.</p>
                     </div>
                     <div class="card glass">
-                        <i data-lucide="palette" class="card-icon"></i>
-                        <h3>Design</h3>
-                        <p>Focusing on aesthetics, user experience, and visual storytelling to create interfaces that wow.</p>
+                        <i data-lucide="shield-check" class="card-icon"></i>
+                        <h3>Functional Safety</h3>
+                        <p>Expertise in IEC 61508 management and rigorous safety-critical development standards.</p>
                     </div>
                     <div class="card glass">
-                        <i data-lucide="zap" class="card-icon"></i>
-                        <h3>Performance</h3>
-                        <p>Optimizing every pixel and line of code for lightning-fast speeds and seamless interactions.</p>
+                        <i data-lucide="network" class="card-icon"></i>
+                        <h3>Industrial Networks</h3>
+                        <p>Deep knowledge of CIP, industrial communication protocols, and multi-system connectivity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="expertise">
+            <div class="reveal">
+                <h2 style="font-size: 3rem; margin-bottom: 3rem;">Technical <span class="gradient-text">Stack</span></h2>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                    <div class="card glass" style="padding: 1.5rem; text-align: center;">
+                        <h4 style="color: var(--accent-color);">Languages</h4>
+                        <p style="font-size: 0.9rem;">C, C++, .NET, SQL, VB</p>
+                    </div>
+                    <div class="card glass" style="padding: 1.5rem; text-align: center;">
+                        <h4 style="color: var(--accent-color);">Controls</h4>
+                        <p style="font-size: 0.9rem;">ControlLogix, PowerFlex, Matlab</p>
+                    </div>
+                    <div class="card glass" style="padding: 1.5rem; text-align: center;">
+                        <h4 style="color: var(--accent-color);">Systems</h4>
+                        <p style="font-size: 0.9rem;">SAP, CAD/CAE, Simulation</p>
+                    </div>
+                    <div class="card glass" style="padding: 1.5rem; text-align: center;">
+                        <h4 style="color: var(--accent-color);">Web</h4>
+                        <p style="font-size: 0.9rem;">ASP.NET, Web Tech</p>
                     </div>
                 </div>
             </div>
@@ -62,28 +107,28 @@
 
         <section class="container" id="projects">
             <div class="reveal">
-                <h2 style="font-size: 3rem; margin-bottom: 3rem;">Selected <span class="gradient-text">Works</span></h2>
+                <h2 style="font-size: 3rem; margin-bottom: 3rem;">Core <span class="gradient-text">Industries</span></h2>
                 <div class="grid">
                     <div class="card glass">
                         <div style="height: 200px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i data-lucide="layout" style="width: 48px; height: 48px; opacity: 0.3;"></i>
+                            <i data-lucide="cog" style="width: 48px; height: 48px; opacity: 0.3;"></i>
                         </div>
-                        <h3>Project One</h3>
-                        <p>A high-performance e-commerce platform built with modern architecture and cutting-edge design.</p>
+                        <h3>Drive Systems</h3>
+                        <p>Specialized in PowerFlex Drives (4, 5, 7, 75x) and Variable Speed Drive embedded software.</p>
                     </div>
                     <div class="card glass">
                         <div style="height: 200px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i data-lucide="smartphone" style="width: 48px; height: 48px; opacity: 0.3;"></i>
+                            <i data-lucide="sun" style="width: 48px; height: 48px; opacity: 0.3;"></i>
                         </div>
-                        <h3>Project Two</h3>
-                        <p>A mobile-first SaaS dashboard designed for maximum productivity and seamless user flow.</p>
+                        <h3>Power & Energy</h3>
+                        <p>Broad background in Wind and Solar power conversion systems and energy management.</p>
                     </div>
                     <div class="card glass">
                         <div style="height: 200px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i data-lucide="globe" style="width: 48px; height: 48px; opacity: 0.3;"></i>
+                            <i data-lucide="activity" style="width: 48px; height: 48px; opacity: 0.3;"></i>
                         </div>
-                        <h3>Project Three</h3>
-                        <p>An interactive data visualization tool that turns complex information into beautiful insights.</p>
+                        <h3>Motion Control</h3>
+                        <p>Advanced motion control solutions for high-precision industrial automation applications.</p>
                     </div>
                 </div>
             </div>
