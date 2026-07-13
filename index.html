@@ -23,6 +23,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#consulting">Consulting</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -110,17 +111,15 @@
                             <h3 style="margin: 0.5rem 0;">Kraft 7 Digital Conversion</h3>
                             <p style="font-size: 0.9rem;">Successfully integrated an ESP32 and 1W 50MHz RF deck into a vintage Kraft case. Digital precision meets classic feel.</p>
                             <br>
-                            <a href="https://github.com/ne9n/radio" target="_blank" style="color: var(--accent-color); font-size: 0.9rem; text-decoration: none;">View Project Specs →</a>
+                            <a href="https://github.com/ne9n" target="_blank" style="color: var(--accent-color); font-size: 0.9rem; text-decoration: none;">View GitHub Repos →</a>
                         </div>
                     </div>
                     <div class="card" style="padding: 0; overflow: hidden; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 4px 4px 0px var(--border-color);">
-                        <img src="assets/cad_component.jpg" alt="CAD Component" style="width: 100%; height: 200px; object-fit: cover;">
+                        <img src="assets/whiteboard.jpg" alt="Engineering Whiteboard" style="width: 100%; height: 200px; object-fit: cover;">
                         <div style="padding: 1.5rem;">
-                            <span style="color: var(--accent-color); font-size: 0.8rem; font-weight: 600;">EAA AIRVENTURE KIDVENTURE</span>
-                            <h3 style="margin: 0.5rem 0;">The Cheesehead Timer</h3>
-                            <p style="font-size: 1rem;">Powering thousands of flights for the "Eagle One" trainer at Oshkosh. 3D-printed enclosures and custom PCB design.</p>
-                            <br>
-                            <a href="https://circlemasters.com/eagle-1-airplane-kidventure.html" target="_blank" style="color: var(--accent-color); font-size: 0.9rem; text-decoration: none;">Explore KidVenture →</a>
+                            <span style="color: var(--accent-color); font-size: 0.8rem; font-weight: 600;">ENGINEERING ANALYSIS</span>
+                            <h3 style="margin: 0.5rem 0;">Load Switch Timing Analysis</h3>
+                            <p style="font-size: 0.9rem;">Solving complex power sequencing issues for embedded systems. Real-world physics meets engineering precision.</p>
                         </div>
                     </div>
                 </div>
@@ -146,13 +145,13 @@
                         <a href="https://circlemasters.com/eagle-1-airplane-kidventure.html" target="_blank" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--border-color);">View Eagle One Specs</a>
                     </div>
                     <div class="card" style="padding: 0; overflow: hidden; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 4px 4px 0px var(--border-color);">
-                        <img src="assets/model_plane_wing.jpg" alt="Model Plane Wing" style="width: 100%; height: 200px; object-fit: cover;">
+                        <img src="assets/whiteboard.jpg" alt="Technical Analysis" style="width: 100%; height: 200px; object-fit: cover;">
                         <div style="padding: 1.5rem;">
                             <i data-lucide="radio" class="card-icon"></i>
                             <h3>6m Ham RC System</h3>
                             <p>Modernizing a vintage Kraft 7 transmitter with a 1W 50MHz digital link, ESP32 firmware, and custom KiCad PCBs.</p>
                             <br>
-                            <a href="https://github.com/ne9n/radio" target="_blank" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--border-color);">View Design</a>
+                            <a href="https://github.com/ne9n" target="_blank" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--border-color);">View Radio Projects</a>
                         </div>
                     </div>
                     <div class="card">
@@ -250,7 +249,27 @@
                         <i data-lucide="mail" class="card-icon" style="width: 48px; height: 48px; margin-bottom: 1rem;"></i>
                         <h3 style="margin-bottom: 1rem;">Get in Touch</h3>
                         <p style="margin-bottom: 2rem;">I'm best reached via email for consulting inquiries or hobbyist collaboration.</p>
-                        <a href="mailto:dwsiegler@gmail.com" class="btn btn-primary" style="display: block; width: 100%;">Email Me Directly</a>
+                        
+                        <form id="contact-form" style="text-align: left;">
+                            <div style="margin-bottom: 1rem;">
+                                <label for="name" style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">Name</label>
+                                <input type="text" id="name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; background: transparent; color: var(--text-primary);">
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <label for="email" style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">Email</label>
+                                <input type="email" id="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; background: transparent; color: var(--text-primary);">
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="message" style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">Message</label>
+                                <textarea id="message" required rows="4" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; background: transparent; color: var(--text-primary); resize: vertical;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">Prefer direct email?</p>
+                            <a href="mailto:dwsiegler@gmail.com" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">dwsiegler@gmail.com</a>
+                        </div>
                     </div>
                 </div>
             </div>

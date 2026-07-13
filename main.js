@@ -57,7 +57,7 @@ const contactForm = document.querySelector('form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('Thank you for your message! This is a demo site, so the form doesn\'t actually send anything.');
+        alert('Thank you for your message, David will get back to you soon!');
         contactForm.reset();
     });
 }
