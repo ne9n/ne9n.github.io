@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Galleries | David Siegler (NE9N)</title>
+    <meta name="description" content="A visual journey through model aviation and historical biplane heritage.">
+    <link rel="stylesheet" href="style.css?v=1.2">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .back-nav {
+            padding: 2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .back-nav a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+        .back-nav a:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">David Siegler<span class="gradient-text">.</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html#hobbies">Hobbies</a></li>
+                <li><a href="index.html#updates">Adventures</a></li>
+                <li><a href="#" class="active">Galleries</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="back-nav">
+            <a href="index.html"><i data-lucide="arrow-left"></i> Back to Portfolio</a>
+        </div>
+
+        <section class="reveal">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Photo <span class="gradient-text">Galleries</span></h1>
+            <p style="color: var(--text-secondary); font-size: 1.2rem; max-width: 600px; margin-bottom: 4rem;">
+                Exploring the intersection of engineering precision and aviation history through my lens.
+            </p>
+
+            <div class="gallery-section">
+                <h2 style="margin-bottom: 2rem; font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Model Aviation</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/gallery_model_1.jpg" alt="Model Airplane in progress">
+                        <div class="gallery-caption">Precision assembly in the workshop</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_model_2.jpg" alt="Model Airplane wing detail">
+                        <div class="gallery-caption">Structural integrity and aerodynamics</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_model_3.jpg" alt="Ready for flight">
+                        <div class="gallery-caption">Final checks before takeoff</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_model_4.jpg" alt="Model aircraft electronics">
+                        <div class="gallery-caption">Integrated flight control systems</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_model_5.jpg" alt="Biplane model detail">
+                        <div class="gallery-caption">Fine mechanical detailing</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_model_6.jpg" alt="Model wing structure">
+                        <div class="gallery-caption">Skeleton of a future flyer</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_model_7.jpg" alt="Tail assembly">
+                        <div class="gallery-caption">Control surfaces calibration</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_model_8.jpg" alt="Workshop overview">
+                        <div class="gallery-caption">Where the magic happens</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-section" style="margin-top: 6rem; margin-bottom: 6rem;">
+                <h2 style="margin-bottom: 2rem; font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Biplane Heritage</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/gallery_biplane_1.jpg" alt="Vintage Biplane in hangar">
+                        <div class="gallery-caption">The golden age of flight</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_biplane_2.jpg" alt="Biplane celebratory cake">
+                        <div class="gallery-caption">Aviation-themed celebration</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_biplane_3.jpg" alt="Museum display biplane">
+                        <div class="gallery-caption">Preserving history for the future</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_biplane_4.jpg" alt="Biplane detail">
+                        <div class="gallery-caption">Engineered for endurance</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_biplane_5.jpg" alt="Classic yellow biplane">
+                        <div class="gallery-caption">Vibrant heritage in the sun</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_biplane_6.jpg" alt="Biplane cockpit view">
+                        <div class="gallery-caption">A pilot's perspective</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_biplane_7.jpg" alt="Radial engine detail">
+                        <div class="gallery-caption">Mechanical heartbeat</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery_biplane_8.jpg" alt="Biplane lineup">
+                        <div class="gallery-caption">Legends standing tall</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 David Siegler. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Simple reveal animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
