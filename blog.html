@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Blog | David Siegler (NE9N)</title>
+    <meta name="description" content="Blog entries and technical project logs by David Siegler.">
+    <link rel="stylesheet" href="style.css?v=1.2">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .back-nav {
+            padding: 2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .back-nav a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+        .back-nav a:hover {
+            transform: translateX(-5px);
+        }
+        .blog-post {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            transition: all 0.3s ease;
+        }
+        .blog-post:hover {
+            border-color: var(--accent-color);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .post-meta {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .blog-post h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        .blog-post p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .read-more {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">David Siegler<span class="gradient-text">.</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html#hobbies">Hobbies</a></li>
+                <li><a href="galleries.html">Galleries</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#" class="active">Blog</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="back-nav">
+            <a href="index.html"><i data-lucide="arrow-left"></i> Back to Portfolio</a>
+        </div>
+
+        <section class="reveal">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Projects & <span class="gradient-text">Blog</span></h1>
+            <p style="color: var(--text-secondary); font-size: 1.2rem; max-width: 700px; margin-bottom: 4rem;">
+                Technical deep dives, workshop updates, and reflections on engineering and aviation.
+            </p>
+
+            <article class="blog-post">
+                <span class="post-meta">July 10, 2026 • Aviation Engineering</span>
+                <h2>Restoring the Radial: A Mechanical Heartbeat</h2>
+                <p>There is something fundamentally different about the sound of a radial engine. It’s not just noise; it’s a rhythmic, mechanical heartbeat that speaks to a different era of engineering. This week, I spent time at the museum looking at the maintenance logs for our vintage biplane...</p>
+                <a href="#" class="read-more">Continue Reading <i data-lucide="chevron-right"></i></a>
+            </article>
+
+            <article class="blog-post">
+                <span class="post-meta">June 22, 2026 • Maker Projects</span>
+                <h2>KidVenture 2026: Eagle One Timer Revisions</h2>
+                <p>As we prepare for this year's KidVenture, I've been refining the "Eagle One" electronic flight timer. The goal was to simplify the interface for younger students while increasing the reliability of the control-line cutoff mechanism. Using a new PCB layout designed in KiCad...</p>
+                <a href="#" class="read-more">Continue Reading <i data-lucide="chevron-right"></i></a>
+            </article>
+
+            <article class="blog-post">
+                <span class="post-meta">May 15, 2026 • Ham Radio</span>
+                <h2>Antenna Theory in the Backyard</h2>
+                <p>Spring in Wisconsin is the perfect time for antenna experimentation. I've been working on a new multi-band wire antenna for the HF bands, focusing on minimizing ground losses in our specific soil conditions. The results on 20 meters have been promising so far...</p>
+                <a href="#" class="read-more">Continue Reading <i data-lucide="chevron-right"></i></a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 David Siegler. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
