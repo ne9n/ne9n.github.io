@@ -63,6 +63,12 @@
         .resource-link:hover {
             text-decoration: underline;
         }
+        .section-divider {
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -88,11 +94,14 @@
         <section class="reveal">
             <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Model Airplane <span class="gradient-text">Resources</span></h1>
             <p style="color: var(--text-secondary); font-size: 1.2rem; max-width: 700px; margin-bottom: 4rem;">
-                A curated list of my favorite sources for plans, community knowledge, and aviation heritage.
+                A curated list of my favorite sources for plans, community knowledge, and local Wisconsin aviation hubs.
             </p>
 
-            <h2 style="margin-bottom: 2rem; font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Primary Plan Sources</h2>
-            <div class="grid" style="margin-bottom: 5rem;">
+            <!-- Plan Sources -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Primary Plan Sources</h2>
+            </div>
+            <div class="grid">
                 <div class="resource-card">
                     <h3>Outerzone</h3>
                     <p>The ultimate repository for vintage and old-timer model airplane plans. Thousands of free PDF downloads for builders.</p>
@@ -110,27 +119,69 @@
                 </div>
             </div>
 
-            <h2 style="margin-bottom: 2rem; font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Organizations & Community</h2>
+            <!-- Major RC Communities -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Major RC Communities</h2>
+            </div>
             <div class="grid">
                 <div class="resource-card">
-                    <h3>Circle Masters Flying Club</h3>
-                    <p>Wisconsin's premier control-line flying club. I'm proud to serve as Vice President and Webmaster here.</p>
-                    <a href="https://circlemasters.com" target="_blank" class="resource-link">Visit Circle Masters <i data-lucide="external-link"></i></a>
-                </div>
-                <div class="resource-card">
-                    <h3>Academy of Model Aeronautics</h3>
-                    <p>The world's largest model aviation association, providing insurance, advocacy, and community for modelers.</p>
-                    <a href="https://www.modelaircraft.org/" target="_blank" class="resource-link">Visit AMA <i data-lucide="external-link"></i></a>
+                    <h3>Stunthanger</h3>
+                    <p>The premier forum for control-line stunt enthusiasts. A wealth of knowledge on building, finishing, and flying.</p>
+                    <a href="https://stunthanger.com/" target="_blank" class="resource-link">Visit Stunthanger <i data-lucide="external-link"></i></a>
                 </div>
                 <div class="resource-card">
                     <h3>RC Groups</h3>
-                    <p>The largest online community for radio control and model aviation enthusiasts.</p>
+                    <p>The largest online community for radio control and model aviation enthusiasts worldwide.</p>
                     <a href="https://www.rcgroups.com/" target="_blank" class="resource-link">Visit RC Groups <i data-lucide="external-link"></i></a>
                 </div>
                 <div class="resource-card">
-                    <h3>EAA KidVenture</h3>
-                    <p>Inspiring the next generation of aviators. I serve as Assistant Chairman for this incredible program at AirVenture.</p>
-                    <a href="https://www.eaa.org/airventure/eaa-airventure-news-and-multimedia/eaa-airventure-news/eaa-airventure-oshkosh/07-15-2022-kidventure-celebrates-25-years" target="_blank" class="resource-link">KidVenture Info <i data-lucide="external-link"></i></a>
+                    <h3>RC Universe</h3>
+                    <p>A massive resource for RC news, reviews, and one of the most active classifieds sections in the hobby.</p>
+                    <a href="https://www.rcuniverse.com/" target="_blank" class="resource-link">Visit RC Universe <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <!-- Control Line & Specialty Supplies -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Control Line & Supplies</h2>
+            </div>
+            <div class="grid">
+                <div class="resource-card">
+                    <h3>Brodak Manufacturing</h3>
+                    <p>The leading name in control-line model aviation. Kits, engines, and specialized supplies for the CL flyer.</p>
+                    <a href="https://brodak.com/" target="_blank" class="resource-link">Visit Brodak <i data-lucide="external-link"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h3>SIG Manufacturing</h3>
+                    <p>A legend in the hobby, providing high-quality balsa, kits, and finishing supplies for generations of builders.</p>
+                    <a href="https://sigmfg.com/" target="_blank" class="resource-link">Visit SIG <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <!-- Local Wisconsin Hubs -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Local Wisconsin Hubs</h2>
+            </div>
+            <div class="grid" style="margin-bottom: 6rem;">
+                <div class="resource-card">
+                    <h3>Circle Masters Flying Club</h3>
+                    <p>Wisconsin's premier control-line flying club. Proudly serving the Milwaukee area and beyond.</p>
+                    <a href="https://circlemasters.com" target="_blank" class="resource-link">Visit Circle Masters <i data-lucide="external-link"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h3>Racine R/C Club</h3>
+                    <p>An active and welcoming club in Mount Pleasant, maintaining a fantastic dedicated flying field.</p>
+                    <a href="https://www.racinercclub.com/" target="_blank" class="resource-link">Visit Racine RC <i data-lucide="external-link"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h3>Hiawatha Hobbies</h3>
+                    <p>One of Wisconsin's larger full-line hobby stores located in Waukesha. A great source for local supplies.</p>
+                    <a href="https://hiawathahobbies.com/" target="_blank" class="resource-link">Visit Hiawatha Hobbies <i data-lucide="external-link"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h3>MARKS RC Club</h3>
+                    <p>The Milwaukee Area R/K Society, established with several historic flying sites in the region.</p>
+                    <a href="https://marks-rc.org/" target="_blank" class="resource-link">Visit MARKS RC <i data-lucide="external-link"></i></a>
                 </div>
             </div>
         </section>
@@ -145,7 +196,6 @@
     <script>
         lucide.createIcons();
         
-        // Simple reveal animation
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
