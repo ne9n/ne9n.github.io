@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Test Equipment & Bench | David Siegler (NE9N)</title>
+    <meta name="description" content="Electronics bench test equipment: RigExpert, Tektronix TDS540, Heathkit Triple Power Supply & VTVM, NanoVNA, Saleae Logic Analyzer, and PicoScope.">
+    <link rel="stylesheet" href="style.css?v=1.2">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .back-nav {
+            padding: 2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .back-nav a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+        .back-nav a:hover {
+            transform: translateX(-5px);
+        }
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .equipment-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .equipment-card:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .equipment-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .equipment-card .badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            align-self: flex-start;
+        }
+        .equipment-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            flex-grow: 1;
+        }
+        .section-divider {
+            margin-top: 4rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+        .bench-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .bench-table th, .bench-table td {
+            padding: 1rem 1.25rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+        .bench-table th {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        .bench-table td {
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">David Siegler<span class="gradient-text">.</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html#hobbies">Hobbies</a></li>
+                <li><a href="galleries.html">Galleries</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="sherline.html">Sherline Lathes</a></li>
+                <li><a href="equipment.html" class="active">Test Equipment</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="back-nav">
+            <a href="index.html"><i data-lucide="arrow-left"></i> Back to Portfolio</a>
+        </div>
+
+        <section class="reveal">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Electronics <span class="gradient-text">Test Equipment</span></h1>
+            <p style="color: var(--text-secondary); font-size: 1.2rem; max-width: 800px; margin-bottom: 3.5rem;">
+                A comprehensive electronics bench setup combining high-bandwidth digitizing scopes, modern RF vector network analyzers, digital logic analyzers, and classic analog vacuum tube instrumentation.
+            </p>
+
+            <!-- RF & Antenna Instrumentation -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">RF & Antenna Instrumentation</h2>
+            </div>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <span class="badge">RF Analyzer</span>
+                    <h3><i data-lucide="radio"></i> RigExpert Antenna Analyzer</h3>
+                    <p>High-precision graphical antenna analyzer for HF/VHF/UHF bands. Measures SWR, complex impedance ($R + jX$), return loss, and cable loss with instant Smith chart plot displays for antenna tuning and field deployments.</p>
+                </div>
+                <div class="equipment-card">
+                    <span class="badge">Vector Network Analyzer</span>
+                    <h3><i data-lucide="activity"></i> NanoVNA 2-Port VNA</h3>
+                    <p>Compact vector network analyzer for $S_{11}$ and $S_{21}$ parameter measurements. Used for characterizing RF filters, duplexers, attenuators, transmission lines, and antenna radiation patterns across 50 kHz to 3+ GHz.</p>
+                </div>
+            </div>
+
+            <!-- Oscilloscopes & Digital Signal Analysis -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Oscilloscopes & Signal Analysis</h2>
+            </div>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <span class="badge">500 MHz Scope</span>
+                    <h3><i data-lucide="tv"></i> Tektronix TDS540 Scope</h3>
+                    <p>4-channel 500 MHz digital digitizing oscilloscope with 1 GS/s real-time sampling. Ideal for high-speed digital pulse evaluation, power supply ripple analysis, and analog RF carrier waveform diagnostics.</p>
+                </div>
+                <div class="equipment-card">
+                    <span class="badge">PC-Based Scope</span>
+                    <h3><i data-lucide="laptop"></i> PicoScope PC Oscilloscope</h3>
+                    <p>High-resolution USB oscilloscope and spectrum analyzer featuring deep memory buffering, serial bus protocol decoding (I2C, SPI, UART, CAN), and FFT frequency-domain spectrum analysis.</p>
+                </div>
+                <div class="equipment-card">
+                    <span class="badge">Logic Analyzer</span>
+                    <h3><i data-lucide="cpu"></i> Saleae Logic Analyzer</h3>
+                    <p>Multi-channel digital logic analyzer used for protocol decoding, micro-controller bus timing verification, SPI/I2C state machine debugging, and embedded firmware telemetry capture.</p>
+                </div>
+            </div>
+
+            <!-- Power & Legacy Analog Instrumentation -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Power & Legacy Analog Bench Equipment</h2>
+            </div>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <span class="badge">Linear Power Supply</span>
+                    <h3><i data-lucide="zap"></i> Heathkit Triple Power Supply</h3>
+                    <p>Classic linear bench DC power supply featuring dual isolated 0–20V variable tracking outputs and a regulated 5V logic supply. Essential for low-noise analog circuit and microcontroller prototyping.</p>
+                </div>
+                <div class="equipment-card">
+                    <span class="badge">Vacuum Tube Volt Meter</span>
+                    <h3><i data-lucide="gauge"></i> Heathkit VTVM Meter</h3>
+                    <p>Precision vacuum tube volt meter with an ultra-high 11 MΩ input impedance. Perfect for measuring high-impedance RF grid voltages, AGC bias, and vintage radio alignment without circuit loading.</p>
+                </div>
+            </div>
+
+            <!-- Bench Matrix Table -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Equipment Specifications Matrix</h2>
+            </div>
+
+            <table class="bench-table">
+                <thead>
+                    <tr>
+                        <th>Instrument</th>
+                        <th>Type / Category</th>
+                        <th>Key Capabilities</th>
+                        <th>Primary Applications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>RigExpert</strong></td>
+                        <td>Antenna Analyzer</td>
+                        <td>SWR, $R+jX$, Smith Chart, Return Loss</td>
+                        <td>HF/VHF antenna tuning & coax fault location</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tektronix TDS540</strong></td>
+                        <td>Digitizing Oscilloscope</td>
+                        <td>500 MHz, 4 Channels, 1 GS/s Sampling</td>
+                        <td>High-speed digital signals & RF carrier evaluation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NanoVNA</strong></td>
+                        <td>Vector Network Analyzer</td>
+                        <td>2-Port $S_{11}$ & $S_{21}$ S-Parameters (50 kHz - 3 GHz)</td>
+                        <td>Filter tuning, duplexers, & RF matching networks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Saleae Logic</strong></td>
+                        <td>Logic Analyzer</td>
+                        <td>Multi-channel, I2C / SPI / UART protocol decoding</td>
+                        <td>Embedded firmware & bus timing verification</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PicoScope</strong></td>
+                        <td>USB Oscilloscope / Spectrum</td>
+                        <td>Deep buffer, FFT spectrum, high resolution</td>
+                        <td>Signal integrity & audio/RF FFT domain analysis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Heathkit Triple Supply</strong></td>
+                        <td>Linear DC Power Supply</td>
+                        <td>Dual 0-20V tracking + 5V regulated logic output</td>
+                        <td>Low-noise analog & digital circuit prototyping</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Heathkit VTVM</strong></td>
+                        <td>Vacuum Tube Volt Meter</td>
+                        <td>11 MΩ input impedance, AC/DC/Ω measurement</td>
+                        <td>High-impedance RF grid bias & tube radio alignment</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- External Software & Manual References -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Software & Documentation Links</h2>
+            </div>
+            <div class="equipment-grid" style="margin-bottom: 6rem;">
+                <div class="equipment-card">
+                    <h3>Saleae Logic Software</h3>
+                    <p>Official download and logic analyzer software documentation for digital protocol decoding.</p>
+                    <a href="https://www.saleae.com/" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">Visit Saleae.com <i data-lucide="external-link"></i></a>
+                </div>
+                <div class="equipment-card">
+                    <h3>PicoScope Software</h3>
+                    <p>Pico Technology scope software suite for PC oscilloscope control and spectrum analysis.</p>
+                    <a href="https://www.picotech.com/" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">Visit PicoTech.com <i data-lucide="external-link"></i></a>
+                </div>
+                <div class="equipment-card">
+                    <h3>RigExpert Analyzers</h3>
+                    <p>RigExpert antenna analyzer documentation, firmware updates, and AntScope software.</p>
+                    <a href="https://rigexpert.com/" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">Visit RigExpert.com <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 David Siegler. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.target && entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
