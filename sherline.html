@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherline Lathes & Milling Attachments | David Siegler (NE9N)</title>
+    <meta name="description" content="Precision micro-machining with Sherline miniature lathes, vertical milling column, and rotary table attachments.">
+    <link rel="stylesheet" href="style.css?v=1.2">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .back-nav {
+            padding: 2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .back-nav a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+        .back-nav a:hover {
+            transform: translateX(-5px);
+        }
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .spec-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .spec-card:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .spec-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .spec-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .section-divider {
+            margin-top: 4rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+        .machining-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .machining-table th, .machining-table td {
+            padding: 1rem 1.25rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+        .machining-table th {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        .machining-table td {
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">David Siegler<span class="gradient-text">.</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html#hobbies">Hobbies</a></li>
+                <li><a href="galleries.html">Galleries</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="sherline.html" class="active">Sherline Lathes</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="back-nav">
+            <a href="index.html"><i data-lucide="arrow-left"></i> Back to Portfolio</a>
+        </div>
+
+        <section class="reveal">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Sherline Lathes & <span class="gradient-text">Milling Attachments</span></h1>
+            <p style="color: var(--text-secondary); font-size: 1.2rem; max-width: 800px; margin-bottom: 3.5rem;">
+                Precision micro-machining and custom metalworking. From miniature model engine bushings to specialized RF connector fittings, Sherline precision tools bridge the gap between digital CAD models and physical metal hardware.
+            </p>
+
+            <!-- Lathe System -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Sherline Precision Micro-Lathe System</h2>
+            </div>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem;">
+                Sherline miniature precision lathes are engineered for high-accuracy turning, facing, boring, and thread cutting on small-scale workpieces. Equipped with electronic variable-speed DC motors, ground steel bedways, and handwheels calibrated in 0.001" increments, these precision machine tools allow holding tolerances down to ±0.0005" in brass, aluminum, stainless steel, bronze, and Delrin.
+            </p>
+
+            <div class="spec-grid">
+                <div class="spec-card">
+                    <h3><i data-lucide="disc"></i> Precision Spindle & Headstock</h3>
+                    <p>Pre-loaded ball bearings, #1 Morse taper spindle bore, and 3/4"-16 external spindle thread accepting 3-jaw scroll chucks, 4-jaw independent chucks, and WW collet adapters.</p>
+                </div>
+                <div class="spec-card">
+                    <h3><i data-lucide="settings"></i> Variable Speed & Drive</h3>
+                    <p>Smooth 70 to 2800 RPM electronic speed control providing continuous high torque even at low speeds for delicate threading and knurling operations.</p>
+                </div>
+                <div class="spec-card">
+                    <h3><i data-lucide="wrench"></i> Quick-Change Tooling</h3>
+                    <p>Quick-change tool post system with adjustable height blocks for high-speed steel (HSS) and carbide indexable cutting tools, parting blades, and boring bars.</p>
+                </div>
+            </div>
+
+            <!-- Milling Column & Table Attachments -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Vertical Milling Column & Table Attachments</h2>
+            </div>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem;">
+                By mounting a vertical milling column attachment directly to the lathe bed or utilizing a dedicated Sherline vertical milling table attachment, the setup transforms into a versatile 3-axis precision milling machine. This allows drilling, slotting, keyway cutting, fly cutting, and complex contour milling on intricate components without investing in a separate large-footprint mill.
+            </p>
+
+            <div class="spec-grid">
+                <div class="spec-card">
+                    <h3><i data-lucide="move"></i> Vertical Column Conversion</h3>
+                    <p>Rigid vertical column attachment converts the lathe headstock into a 3-axis vertical mill with precision Z-axis lead-screw feed controls.</p>
+                </div>
+                <div class="spec-card">
+                    <h3><i data-lucide="grid"></i> T-Slot Milling Table & Vise</h3>
+                    <p>Precision-machined aluminum T-slot table attachment paired with a 2" precision toolmaker's vise for rigid workpiece clamping during milling and slotting operations.</p>
+                </div>
+                <div class="spec-card">
+                    <h3><i data-lucide="rotate-cw"></i> 4" Precision Rotary Table</h3>
+                    <p>Handwheel-driven rotary table attachment enabling circular bolt patterns, curved slotting, gear cutting, and radial indexing for model aircraft components.</p>
+                </div>
+            </div>
+
+            <!-- Custom Applications & Machining Capabilities -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Custom Tooling & Model Aviation Projects</h2>
+            </div>
+
+            <table class="machining-table">
+                <thead>
+                    <tr>
+                        <th>Component / Project</th>
+                        <th>Material</th>
+                        <th>Machining Operations</th>
+                        <th>Application</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Control Line Engine Bushings</strong></td>
+                        <td>6061-T6 Aluminum / Bronze</td>
+                        <td>Precision turning, internal reaming, facing</td>
+                        <td>Custom crankshaft sleeve bearings & prop hubs for glow engines</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Model Plane Landing Gear Housings</strong></td>
+                        <td>7075 Aluminum / Brass</td>
+                        <td>Vertical milling, pocketing, precision drilling</td>
+                        <td>Custom shock-absorbing strut brackets & pivot blocks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RF Connector Adapters & Enclosures</strong></td>
+                        <td>C360 Brass / Delrin</td>
+                        <td>Boring, external threading, face groove milling</td>
+                        <td>Ham radio impedance matching networks & coaxial feedthroughs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Eagle One Timer Standoffs</strong></td>
+                        <td>6061-T6 Aluminum</td>
+                        <td>Tapping, knurling, chamfering, parting</td>
+                        <td>Custom mounting standoffs for KidVenture electronic flight timers</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- External References -->
+            <div class="section-divider">
+                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Resources & Technical References</h2>
+            </div>
+            <div class="spec-grid" style="margin-bottom: 6rem;">
+                <div class="spec-card">
+                    <h3>Sherline Precision Tools</h3>
+                    <p>Official catalog, accessories guide, and technical manuals for Sherline miniature lathes, mills, and CNC systems.</p>
+                    <a href="https://www.sherline.com/" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">Visit Sherline.com <i data-lucide="external-link"></i></a>
+                </div>
+                <div class="spec-card">
+                    <h3>Onshape CAD & Machining Models</h3>
+                    <p>Explore 3D CAD models engineered in Onshape for custom Sherline fixtures, tool posts, and milling setups.</p>
+                    <a href="https://cad.onshape.com/documents?resourceType=resourceuserowner&nodeId=6702f4df43938324c9d00177" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View Onshape CAD <i data-lucide="external-link"></i></a>
+                </div>
+                <div class="spec-card">
+                    <h3>Thingiverse Machining Accessories</h3>
+                    <p>Download 3D printable chip guards, dial indicator mounts, and handwheel accessories for Sherline machines.</p>
+                    <a href="https://www.thingiverse.com/ne9n/designs" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View Thingiverse Models <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 David Siegler. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.target && entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
