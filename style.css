@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-    --bg-color: #fdfcf7;
-    --surface-color: #ffffff;
-    --border-color: #e8e4d8;
-    --text-primary: #3d3733;
-    --text-secondary: #6e6761;
-    --accent-color: #913303;
-    --accent-light: #d9bba9;
+    --bg-color: #0f172a;
+    --surface-color: rgba(30, 41, 59, 0.85);
+    --border-color: #334155;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --accent-color: #f97316;
+    --accent-light: #fdba74;
     --font-heading: 'Lora', serif;
     --font-body: 'Crimson Pro', serif;
     --transition-smooth: all 0.3s ease-in-out;
@@ -150,7 +150,7 @@ nav a:hover {
     text-align: center;
     position: relative;
     padding-top: 3rem;
-    background: linear-gradient(to bottom, rgba(253, 252, 247, 0.4), var(--bg-color)), url('assets/hero_aviation_new.jpg?v=2');
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.6), var(--bg-color)), url('assets/hero_aviation_new.jpg?v=2');
     background-size: cover;
     background-position: center;
 }
@@ -253,7 +253,7 @@ nav a:hover {
 input, textarea {
     width: 100%;
     padding: 1rem;
-    background: #fff;
+    background: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 4px;
     color: var(--text-primary);
@@ -272,7 +272,7 @@ input:focus, textarea:focus {
 /* Footer */
 footer {
     padding: 3rem 0;
-    background: #f4f1e6;
+    background: var(--surface-color);
     border-top: 1px solid var(--border-color);
     text-align: center;
     color: var(--text-secondary);
