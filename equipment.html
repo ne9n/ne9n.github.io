@@ -201,10 +201,25 @@
                     <h3><i data-lucide="zap"></i> Heathkit Triple Power Supply</h3>
                     <p>Classic linear bench DC power supply featuring dual isolated 0–20V variable tracking outputs and a regulated 5V logic supply. Essential for low-noise analog circuit and microcontroller prototyping.</p>
                 </div>
-                <div class="equipment-card">
+                <div class="equipment-card" style="grid-column: 1 / -1;">
                     <span class="badge">Vacuum Tube Volt Meter</span>
                     <h3><i data-lucide="gauge"></i> Heathkit VTVM Meter</h3>
-                    <p>Precision vacuum tube volt meter with an ultra-high 11 MΩ input impedance. Perfect for measuring high-impedance RF grid voltages, AGC bias, and vintage radio alignment without circuit loading.</p>
+                    
+                    <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 1rem;">
+                        <img src="assets/vtvm.jpeg" alt="Heathkit VTVM" style="width: 100%; max-width: 350px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <div style="flex: 1; min-width: 300px;">
+                            <p style="margin-bottom: 1rem;">Precision vacuum tube volt meter with an ultra-high 11 MΩ input impedance. Perfect for measuring high-impedance RF grid voltages, AGC bias, and vintage radio alignment without circuit loading.</p>
+                            
+                            <p style="margin-bottom: 1rem;">A Vacuum Tube Voltmeter (VTVM) is chosen over a Digital Multimeter (DMM) primarily for analog trend visualization, isolation of probe reactance via built-in probe resistors, and extreme input ruggedness when working on vintage electronics. <a href="https://www.reddit.com/r/AskElectronics/comments/xfqv4r/dmm_vs_vtvm/" style="color: var(--accent-color);">[1]</a> <a href="https://www.facebook.com/groups/electronichobbycircuits/posts/7557398140951496/" style="color: var(--accent-color);">[2]</a> <a href="https://www.eevblog.com/forum/testgear/tube-voltmeter-vs-typical-multimeter/" style="color: var(--accent-color);">[3]</a> <a href="https://www.eevblog.com/forum/beginners/vtvm-vs-dvm/" style="color: var(--accent-color);">[4]</a></p>
+                            
+                            <h4 style="color: var(--accent-color); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-heading); font-size: 1.2rem;">Advantages of a VTVM</h4>
+                            <ul style="list-style: none; padding-left: 0; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.8rem;">
+                                <li><strong style="color: var(--text-primary);">Analog Needle Display:</strong> Makes peak tuning, nulling, and observing dynamic voltage fluctuations much easier than watching a changing stream of digits on a DMM screen. <a href="https://www.reddit.com/r/AskElectronics/comments/1h3gvst/when_is_it_ok_to_use_a_multimeter_instead_of_a/" style="color: var(--accent-color);">[1]</a> <a href="https://www.nutsvolts.com/magazine/article/vintage-tek-the-vacuum-tube-voltmeter" style="color: var(--accent-color);">[2]</a> <a href="https://www.reddit.com/r/AskElectronics/comments/xfqv4r/dmm_vs_vtvm/" style="color: var(--accent-color);">[3]</a></li>
+                                <li><strong style="color: var(--text-primary);">RF Isolation:</strong> Many classic VTVMs feature a 1-megohm isolating resistor built right into the probe tip, which prevents the capacitance of the test cable from detuning sensitive RF or oscillator circuits. <a href="https://antiqueradios.com/forums/viewtopic.php?t=267359" style="color: var(--accent-color);">[1]</a> <a href="https://www.eevblog.com/forum/testgear/tube-voltmeter-vs-typical-multimeter/" style="color: var(--accent-color);">[2]</a> <a href="https://www.eevblog.com/forum/beginners/vtvm-vs-dvm/" style="color: var(--accent-color);">[3]</a></li>
+                                <li><strong style="color: var(--text-primary);">Circuit Protection:</strong> The tube-based front end handles heavy overvoltage spikes and misadjustments remarkably well without instantly frying solid-state components. <a href="https://antiqueradios.com/forums/viewtopic.php?t=94356" style="color: var(--accent-color);">[1]</a> <a href="https://www.reddit.com/r/AskElectronics/comments/xfqv4r/dmm_vs_vtvm/" style="color: var(--accent-color);">[2]</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
