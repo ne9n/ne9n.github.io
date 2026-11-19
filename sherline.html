@@ -17,15 +17,16 @@
         }
         .back-nav a {
             text-decoration: none;
-            color: var(--accent-color);
-            font-weight: 600;
+            color: var(--text-secondary);
+            font-weight: 400;
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            transition: transform 0.2s ease;
+            transition: color 0.2s ease;
         }
         .back-nav a:hover {
-            transform: translateX(-5px);
+            transform: none;
+            color: var(--text-primary);
         }
         .spec-grid {
             display: grid;
@@ -34,28 +35,30 @@
             margin-top: 2rem;
         }
         .spec-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: var(--surface-color);
             border: 1px solid var(--border-color);
             padding: 2rem;
-            border-radius: 8px;
-            transition: all 0.3s ease;
+            border-radius: 4px;
+            transition: box-shadow 0.2s ease;
         }
         .spec-card:hover {
-            border-color: var(--accent-color);
-            transform: translateY(-4px);
-            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--border-color);
+            transform: none;
+            background: var(--surface-color);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         .spec-card h3 {
-            color: var(--accent-color);
+            color: var(--text-primary);
             margin-bottom: 1rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            font-weight: 600;
         }
         .spec-card p {
             color: var(--text-secondary);
             font-size: 0.95rem;
-            line-height: 1.7;
+            line-height: 1.6;
         }
         .section-divider {
             margin-top: 4rem;
@@ -67,9 +70,9 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 1.5rem;
-            background: rgba(255, 255, 255, 0.03);
+            background: var(--surface-color);
             border: 1px solid var(--border-color);
-            border-radius: 8px;
+            border-radius: 4px;
             overflow: hidden;
         }
         .machining-table th, .machining-table td {
@@ -79,8 +82,8 @@
             font-size: 0.95rem;
         }
         .machining-table th {
-            background: rgba(255, 255, 255, 0.08);
-            color: var(--accent-color);
+            background: var(--surface-color);
+            color: var(--text-primary);
             font-weight: 600;
         }
         .machining-table td {
@@ -111,14 +114,14 @@
         </div>
 
         <section class="reveal">
-            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Sherline Lathes & <span class="gradient-text">Milling Attachments</span></h1>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Sherline Lathes & Milling Attachments</h1>
             <p style="color: var(--text-secondary); font-size: 1.2rem; max-width: 800px; margin-bottom: 3.5rem;">
                 Precision micro-machining and custom metalworking. From miniature model engine bushings to specialized RF connector fittings, Sherline precision tools bridge the gap between digital CAD models and physical metal hardware.
             </p>
 
             <!-- Lathe System -->
             <div class="section-divider">
-                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Sherline Model 4100 Precision Micro-Lathe System</h2>
+                <h2 style="font-style: italic; border-left: 1px solid var(--border-color); padding-left: 1rem;">Sherline Model 4100 Precision Micro-Lathe System</h2>
             </div>
 
             <img src="assets/sherline.jpg" alt="Sherline Model 4100 Precision Lathe and Vertical Milling Attachment" style="width: 100%; max-height: 500px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 2rem;">
@@ -144,7 +147,7 @@
 
             <!-- Milling Column & Table Attachments -->
             <div class="section-divider">
-                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Vertical Milling Column & Table Attachments</h2>
+                <h2 style="font-style: italic; border-left: 1px solid var(--border-color); padding-left: 1rem;">Vertical Milling Column & Table Attachments</h2>
             </div>
             <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem;">
                 By mounting a vertical milling column attachment directly to the lathe bed or utilizing a dedicated Sherline vertical milling table attachment, the setup transforms into a versatile 3-axis precision milling machine. This allows drilling, slotting, keyway cutting, fly cutting, and complex contour milling on intricate components without investing in a separate large-footprint mill.
@@ -167,7 +170,7 @@
 
             <!-- Custom Applications & Machining Capabilities -->
             <div class="section-divider">
-                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Custom Tooling & Model Aviation Projects</h2>
+                <h2 style="font-style: italic; border-left: 1px solid var(--border-color); padding-left: 1rem;">Custom Tooling & Model Aviation Projects</h2>
             </div>
 
             <table class="machining-table">
@@ -209,23 +212,23 @@
 
             <!-- External References -->
             <div class="section-divider">
-                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Resources & Technical References</h2>
+                <h2 style="font-style: italic; border-left: 1px solid var(--border-color); padding-left: 1rem;">Resources & Technical References</h2>
             </div>
             <div class="spec-grid" style="margin-bottom: 6rem;">
                 <div class="spec-card">
                     <h3>Sherline 4100 Lathe Manual</h3>
                     <p>Official Sherline 4000/4100 Series 3.5" x 8" Lathe Assembly & Operating Instructions PDF manual and exploded parts diagram.</p>
-                    <a href="https://www.sherline.com/wp-content/uploads/2016/01/4000inst.pdf" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View 4100 Lathe Manual (PDF) <i data-lucide="external-link"></i></a>
+                    <a href="https://www.sherline.com/wp-content/uploads/2016/01/4000inst.pdf" target="_blank" style="color: var(--text-secondary); font-weight: 400; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View 4100 Lathe Manual (PDF) <i data-lucide="external-link"></i></a>
                 </div>
                 <div class="spec-card">
                     <h3>Vertical Milling Column Manual</h3>
                     <p>Instructions for mounting and aligning the vertical milling column and T-slot milling table attachments on Sherline lathes.</p>
-                    <a href="https://www.sherline.com/wp-content/uploads/2016/01/3050inst.pdf" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View Milling Manual (PDF) <i data-lucide="external-link"></i></a>
+                    <a href="https://www.sherline.com/wp-content/uploads/2016/01/3050inst.pdf" target="_blank" style="color: var(--text-secondary); font-weight: 400; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View Milling Manual (PDF) <i data-lucide="external-link"></i></a>
                 </div>
                 <div class="spec-card">
                     <h3>Onshape CAD & Machining Models</h3>
                     <p>Explore 3D CAD models engineered in Onshape for custom Sherline fixtures, tool posts, and milling setups.</p>
-                    <a href="https://cad.onshape.com/documents?resourceType=resourceuserowner&nodeId=6702f4df43938324c9d00177" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View Onshape CAD <i data-lucide="external-link"></i></a>
+                    <a href="https://cad.onshape.com/documents?resourceType=resourceuserowner&nodeId=6702f4df43938324c9d00177" target="_blank" style="color: var(--text-secondary); font-weight: 400; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View Onshape CAD <i data-lucide="external-link"></i></a>
                 </div>
             </div>
         </section>
@@ -252,3 +255,4 @@
     </script>
 </body>
 </html>
+

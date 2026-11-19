@@ -17,7 +17,7 @@
         }
         .back-nav a {
             text-decoration: none;
-            color: var(--accent-color);
+            color: var(--text-secondary);
             font-weight: 600;
             display: flex;
             align-items: center;
@@ -28,45 +28,49 @@
             transform: translateX(-5px);
         }
         .blog-post {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--border-color);
-            padding: 2.5rem;
-            border-radius: 8px;
-            margin-bottom: 3rem;
-            transition: all 0.3s ease;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid var(--border-color);
+            padding: 2.5rem 0;
+            margin-bottom: 2rem;
+            transition: none;
         }
         .blog-post:hover {
-            border-color: var(--accent-color);
-            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--border-color);
+            background: transparent;
         }
         .post-meta {
-            font-size: 0.85rem;
-            color: var(--accent-color);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: 0;
+            margin-bottom: 0.75rem;
             display: block;
         }
         .blog-post h2 {
-            margin-bottom: 1rem;
-            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 600;
         }
         .blog-post p {
             color: var(--text-secondary);
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
         }
         .read-more {
-            color: var(--text-primary);
+            color: var(--text-secondary);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 400;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.4rem;
+            font-size: 0.95rem;
         }
         .read-more:hover {
             text-decoration: underline;
+            color: var(--text-primary);
         }
     </style>
 </head>
@@ -93,7 +97,7 @@
         </div>
 
         <section class="reveal">
-            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Projects & <span class="gradient-text">Blog</span></h1>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Projects & Blog</h1>
             <p style="color: var(--text-secondary); font-size: 1.2rem; max-width: 700px; margin-bottom: 4rem;">
                 Technical deep dives, workshop updates, and reflections on engineering and aviation.
             </p>
@@ -208,3 +212,4 @@
     </script>
 </body>
 </html>
+

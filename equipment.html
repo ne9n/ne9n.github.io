@@ -17,15 +17,16 @@
         }
         .back-nav a {
             text-decoration: none;
-            color: var(--accent-color);
-            font-weight: 600;
+            color: var(--text-secondary);
+            font-weight: 400;
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            transition: transform 0.2s ease;
+            transition: color 0.2s ease;
         }
         .back-nav a:hover {
-            transform: translateX(-5px);
+            transform: none;
+            color: var(--text-primary);
         }
         .equipment-grid {
             display: grid;
@@ -34,42 +35,44 @@
             margin-top: 2rem;
         }
         .equipment-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: var(--surface-color);
             border: 1px solid var(--border-color);
             padding: 2rem;
-            border-radius: 8px;
-            transition: all 0.3s ease;
+            border-radius: 4px;
+            transition: box-shadow 0.2s ease;
             display: flex;
             flex-direction: column;
         }
         .equipment-card:hover {
-            border-color: var(--accent-color);
-            transform: translateY(-4px);
-            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--border-color);
+            transform: none;
+            background: var(--surface-color);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         .equipment-card h3 {
-            color: var(--accent-color);
+            color: var(--text-primary);
             margin-bottom: 0.75rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            font-weight: 600;
         }
         .equipment-card .badge {
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: var(--text-primary);
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
+            font-size: 0.7rem;
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: 0;
+            color: var(--text-secondary);
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+            margin-bottom: 0.75rem;
             align-self: flex-start;
         }
         .equipment-card p {
             color: var(--text-secondary);
             font-size: 0.95rem;
-            line-height: 1.7;
+            line-height: 1.6;
             flex-grow: 1;
         }
         .section-divider {
@@ -82,9 +85,9 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 1.5rem;
-            background: rgba(255, 255, 255, 0.03);
+            background: var(--surface-color);
             border: 1px solid var(--border-color);
-            border-radius: 8px;
+            border-radius: 4px;
             overflow: hidden;
         }
         .bench-table th, .bench-table td {
@@ -94,8 +97,8 @@
             font-size: 0.95rem;
         }
         .bench-table th {
-            background: rgba(255, 255, 255, 0.08);
-            color: var(--accent-color);
+            background: var(--surface-color);
+            color: var(--text-primary);
             font-weight: 600;
         }
         .bench-table td {
@@ -126,14 +129,14 @@
         </div>
 
         <section class="reveal">
-            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Electronics <span class="gradient-text">Test Equipment</span></h1>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Electronics Test Equipment</h1>
             <p style="color: var(--text-secondary); font-size: 1.2rem; max-width: 800px; margin-bottom: 3.5rem;">
                 A comprehensive electronics bench setup combining high-bandwidth digitizing scopes, modern RF vector network analyzers, digital logic analyzers, and classic analog vacuum tube instrumentation.
             </p>
 
             <!-- RF & Antenna Instrumentation -->
             <div class="section-divider">
-                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">RF & Antenna Instrumentation</h2>
+                <h2 style="font-style: italic; border-left: 1px solid var(--border-color); padding-left: 1rem;">RF & Antenna Instrumentation</h2>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
@@ -147,8 +150,8 @@
                     <h3><i data-lucide="radio"></i> RigExpert AA-650 ZOOM</h3>
                     <p>High-precision graphical antenna analyzer for 0.1 to 650 MHz. Measures SWR, complex impedance ($R + jX$), return loss, and cable TDR (Time Domain Reflectometry) distance-to-fault with instant Smith chart plot displays for antenna tuning.</p>
                     <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.4rem;">
-                        <a href="https://rigexpert.com/products/antenna-analyzers/aa-650-zoom/" target="_blank" style="color: var(--accent-color); font-weight: 600; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">AA-650 ZOOM User Manual & Specs <i data-lucide="external-link"></i></a>
-                        <a href="https://rigexpert.com/products/software/antscope2/" target="_blank" style="color: var(--accent-color); font-weight: 600; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">AntScope2 PC & Mobile Software <i data-lucide="external-link"></i></a>
+                        <a href="https://rigexpert.com/products/antenna-analyzers/aa-650-zoom/" target="_blank" style="color: var(--text-secondary); font-weight: 400; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">AA-650 ZOOM User Manual & Specs <i data-lucide="external-link"></i></a>
+                        <a href="https://rigexpert.com/products/software/antscope2/" target="_blank" style="color: var(--text-secondary); font-weight: 400; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">AntScope2 PC & Mobile Software <i data-lucide="external-link"></i></a>
                     </div>
                 </div>
                 <div class="equipment-card">
@@ -156,15 +159,15 @@
                     <h3><i data-lucide="activity"></i> NanoVNA Vector Network Analyzer</h3>
                     <p>Compact 2-port vector network analyzer for $S_{11}$ reflection and $S_{21}$ transmission S-parameter measurements across 50 kHz to 3 GHz. Essential for tuning RF filters, duplexers, attenuators, and antenna matching networks.</p>
                     <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.4rem;">
-                        <a href="https://nanovna.com/" target="_blank" style="color: var(--accent-color); font-weight: 600; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">NanoVNA User Manual & Menu Map <i data-lucide="external-link"></i></a>
-                        <a href="https://github.com/NanoVNA-Saver/nanovna-saver" target="_blank" style="color: var(--accent-color); font-weight: 600; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">NanoVNA-Saver Software Suite <i data-lucide="external-link"></i></a>
+                        <a href="https://nanovna.com/" target="_blank" style="color: var(--text-secondary); font-weight: 400; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">NanoVNA User Manual & Menu Map <i data-lucide="external-link"></i></a>
+                        <a href="https://github.com/NanoVNA-Saver/nanovna-saver" target="_blank" style="color: var(--text-secondary); font-weight: 400; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">NanoVNA-Saver Software Suite <i data-lucide="external-link"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Oscilloscopes & Digital Signal Analysis -->
             <div class="section-divider">
-                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Oscilloscopes & Signal Analysis</h2>
+                <h2 style="font-style: italic; border-left: 1px solid var(--border-color); padding-left: 1rem;">Oscilloscopes & Signal Analysis</h2>
             </div>
 
             <img src="assets/tektronix_tds540.png" alt="Tektronix TDS540 500MHz Digitizing Oscilloscope" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 2rem;">
@@ -175,7 +178,7 @@
                     <h3><i data-lucide="tv"></i> Tektronix TDS540 Scope</h3>
                     <p>4-channel 500 MHz digital digitizing oscilloscope with 1 GS/s real-time sampling. Ideal for high-speed digital pulse evaluation, power supply ripple analysis, and analog RF carrier waveform diagnostics.</p>
                     <div style="margin-top: 1rem;">
-                        <a href="https://w1.fi/tds540/" target="_blank" style="color: var(--accent-color); font-weight: 600; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">TDS540 Service Manual & Recapping Guide <i data-lucide="external-link"></i></a>
+                        <a href="https://w1.fi/tds540/" target="_blank" style="color: var(--text-secondary); font-weight: 400; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">TDS540 Service Manual & Recapping Guide <i data-lucide="external-link"></i></a>
                     </div>
                 </div>
                 <div class="equipment-card">
@@ -192,7 +195,7 @@
 
             <!-- Power & Legacy Analog Instrumentation -->
             <div class="section-divider">
-                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Power & Legacy Analog Bench Equipment</h2>
+                <h2 style="font-style: italic; border-left: 1px solid var(--border-color); padding-left: 1rem;">Power & Legacy Analog Bench Equipment</h2>
             </div>
 
             <div class="equipment-grid">
@@ -211,13 +214,13 @@
                         <div style="flex: 1; min-width: 300px;">
                             <p style="margin-bottom: 1rem;">Precision vacuum tube volt meter with an ultra-high 11 MΩ input impedance. Perfect for measuring high-impedance RF grid voltages, AGC bias, and vintage radio alignment without circuit loading.</p>
                             
-                            <p style="margin-bottom: 1rem;">A Vacuum Tube Voltmeter (VTVM) is chosen over a Digital Multimeter (DMM) primarily for analog trend visualization, isolation of probe reactance via built-in probe resistors, and extreme input ruggedness when working on vintage electronics. <a href="https://www.reddit.com/r/AskElectronics/comments/xfqv4r/dmm_vs_vtvm/" style="color: var(--accent-color);">[1]</a> <a href="https://www.facebook.com/groups/electronichobbycircuits/posts/7557398140951496/" style="color: var(--accent-color);">[2]</a> <a href="https://www.eevblog.com/forum/testgear/tube-voltmeter-vs-typical-multimeter/" style="color: var(--accent-color);">[3]</a> <a href="https://www.eevblog.com/forum/beginners/vtvm-vs-dvm/" style="color: var(--accent-color);">[4]</a></p>
+                            <p style="margin-bottom: 1rem;">A Vacuum Tube Voltmeter (VTVM) is chosen over a Digital Multimeter (DMM) primarily for analog trend visualization, isolation of probe reactance via built-in probe resistors, and extreme input ruggedness when working on vintage electronics. <a href="https://www.reddit.com/r/AskElectronics/comments/xfqv4r/dmm_vs_vtvm/" style="color: var(--text-secondary);">[1]</a> <a href="https://www.facebook.com/groups/electronichobbycircuits/posts/7557398140951496/" style="color: var(--text-secondary);">[2]</a> <a href="https://www.eevblog.com/forum/testgear/tube-voltmeter-vs-typical-multimeter/" style="color: var(--text-secondary);">[3]</a> <a href="https://www.eevblog.com/forum/beginners/vtvm-vs-dvm/" style="color: var(--text-secondary);">[4]</a></p>
                             
-                            <h4 style="color: var(--accent-color); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-heading); font-size: 1.2rem;">Advantages of a VTVM</h4>
+                            <h4 style="color: var(--text-secondary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-heading); font-size: 1.2rem;">Advantages of a VTVM</h4>
                             <ul style="list-style: none; padding-left: 0; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.8rem;">
-                                <li><strong style="color: var(--text-primary);">Analog Needle Display:</strong> Makes peak tuning, nulling, and observing dynamic voltage fluctuations much easier than watching a changing stream of digits on a DMM screen. <a href="https://www.reddit.com/r/AskElectronics/comments/1h3gvst/when_is_it_ok_to_use_a_multimeter_instead_of_a/" style="color: var(--accent-color);">[1]</a> <a href="https://www.nutsvolts.com/magazine/article/vintage-tek-the-vacuum-tube-voltmeter" style="color: var(--accent-color);">[2]</a> <a href="https://www.reddit.com/r/AskElectronics/comments/xfqv4r/dmm_vs_vtvm/" style="color: var(--accent-color);">[3]</a></li>
-                                <li><strong style="color: var(--text-primary);">RF Isolation:</strong> Many classic VTVMs feature a 1-megohm isolating resistor built right into the probe tip, which prevents the capacitance of the test cable from detuning sensitive RF or oscillator circuits. <a href="https://antiqueradios.com/forums/viewtopic.php?t=267359" style="color: var(--accent-color);">[1]</a> <a href="https://www.eevblog.com/forum/testgear/tube-voltmeter-vs-typical-multimeter/" style="color: var(--accent-color);">[2]</a> <a href="https://www.eevblog.com/forum/beginners/vtvm-vs-dvm/" style="color: var(--accent-color);">[3]</a></li>
-                                <li><strong style="color: var(--text-primary);">Circuit Protection:</strong> The tube-based front end handles heavy overvoltage spikes and misadjustments remarkably well without instantly frying solid-state components. <a href="https://antiqueradios.com/forums/viewtopic.php?t=94356" style="color: var(--accent-color);">[1]</a> <a href="https://www.reddit.com/r/AskElectronics/comments/xfqv4r/dmm_vs_vtvm/" style="color: var(--accent-color);">[2]</a></li>
+                                <li><strong style="color: var(--text-primary);">Analog Needle Display:</strong> Makes peak tuning, nulling, and observing dynamic voltage fluctuations much easier than watching a changing stream of digits on a DMM screen. <a href="https://www.reddit.com/r/AskElectronics/comments/1h3gvst/when_is_it_ok_to_use_a_multimeter_instead_of_a/" style="color: var(--text-secondary);">[1]</a> <a href="https://www.nutsvolts.com/magazine/article/vintage-tek-the-vacuum-tube-voltmeter" style="color: var(--text-secondary);">[2]</a> <a href="https://www.reddit.com/r/AskElectronics/comments/xfqv4r/dmm_vs_vtvm/" style="color: var(--text-secondary);">[3]</a></li>
+                                <li><strong style="color: var(--text-primary);">RF Isolation:</strong> Many classic VTVMs feature a 1-megohm isolating resistor built right into the probe tip, which prevents the capacitance of the test cable from detuning sensitive RF or oscillator circuits. <a href="https://antiqueradios.com/forums/viewtopic.php?t=267359" style="color: var(--text-secondary);">[1]</a> <a href="https://www.eevblog.com/forum/testgear/tube-voltmeter-vs-typical-multimeter/" style="color: var(--text-secondary);">[2]</a> <a href="https://www.eevblog.com/forum/beginners/vtvm-vs-dvm/" style="color: var(--text-secondary);">[3]</a></li>
+                                <li><strong style="color: var(--text-primary);">Circuit Protection:</strong> The tube-based front end handles heavy overvoltage spikes and misadjustments remarkably well without instantly frying solid-state components. <a href="https://antiqueradios.com/forums/viewtopic.php?t=94356" style="color: var(--text-secondary);">[1]</a> <a href="https://www.reddit.com/r/AskElectronics/comments/xfqv4r/dmm_vs_vtvm/" style="color: var(--text-secondary);">[2]</a></li>
                             </ul>
                         </div>
                     </div>
@@ -226,7 +229,7 @@
 
             <!-- Bench Matrix Table -->
             <div class="section-divider">
-                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Equipment Specifications Matrix</h2>
+                <h2 style="font-style: italic; border-left: 1px solid var(--border-color); padding-left: 1rem;">Equipment Specifications Matrix</h2>
             </div>
 
             <table class="bench-table">
@@ -286,36 +289,36 @@
 
             <!-- External Software & Manual References -->
             <div class="section-divider">
-                <h2 style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 1rem;">Software & Documentation Links</h2>
+                <h2 style="font-style: italic; border-left: 1px solid var(--border-color); padding-left: 1rem;">Software & Documentation Links</h2>
             </div>
             <div class="equipment-grid" style="margin-bottom: 6rem;">
                 <div class="equipment-card">
                     <h3>Tektronix TDS540 Service Manuals</h3>
                     <p>Official Tektronix TDS 520 & TDS 540 digitizing oscilloscope service manuals, schematics, calibration guides, and capacitor maintenance documentation.</p>
-                    <a href="https://w1.fi/tds540/" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View TDS540 Repair Manuals <i data-lucide="external-link"></i></a>
+                    <a href="https://w1.fi/tds540/" target="_blank" style="color: var(--text-secondary); font-weight: 400; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View TDS540 Repair Manuals <i data-lucide="external-link"></i></a>
                 </div>
                 <div class="equipment-card">
                     <h3>Saleae Logic Software</h3>
                     <p>Official download and logic analyzer software documentation for digital protocol decoding.</p>
-                    <a href="https://www.saleae.com/" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">Visit Saleae.com <i data-lucide="external-link"></i></a>
+                    <a href="https://www.saleae.com/" target="_blank" style="color: var(--text-secondary); font-weight: 400; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">Visit Saleae.com <i data-lucide="external-link"></i></a>
                 </div>
                 <div class="equipment-card">
                     <h3>PicoScope Software</h3>
                     <p>Pico Technology scope software suite for PC oscilloscope control and spectrum analysis.</p>
-                    <a href="https://www.picotech.com/" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">Visit PicoTech.com <i data-lucide="external-link"></i></a>
+                    <a href="https://www.picotech.com/" target="_blank" style="color: var(--text-secondary); font-weight: 400; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">Visit PicoTech.com <i data-lucide="external-link"></i></a>
                 </div>
                 <div class="equipment-card">
                     <h3>RigExpert AA-650 ZOOM Docs</h3>
                     <p>RigExpert AA-650 ZOOM user manual, firmware updates, and AntScope2 PC & mobile software suite.</p>
-                    <a href="https://rigexpert.com/products/antenna-analyzers/aa-650-zoom/" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View AA-650 ZOOM Manual <i data-lucide="external-link"></i></a>
+                    <a href="https://rigexpert.com/products/antenna-analyzers/aa-650-zoom/" target="_blank" style="color: var(--text-secondary); font-weight: 400; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">View AA-650 ZOOM Manual <i data-lucide="external-link"></i></a>
                 </div>
                 <div class="equipment-card">
                     <h3>NanoVNA User Guides & Software</h3>
                     <p>Official NanoVNA user manuals, calibration instructions, and open-source NanoVNA software clients.</p>
                     <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
-                        <a href="https://nanovna.com/" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">View NanoVNA Docs <i data-lucide="external-link"></i></a>
-                        <a href="https://github.com/NanoVNA-Saver/nanovna-saver" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">NanoVNA-Saver App <i data-lucide="external-link"></i></a>
-                        <a href="https://github.com/OneOfEleven/NanoVNA-App" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">NanoVNA Web Client <i data-lucide="external-link"></i></a>
+                        <a href="https://nanovna.com/" target="_blank" style="color: var(--text-secondary); font-weight: 400; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">View NanoVNA Docs <i data-lucide="external-link"></i></a>
+                        <a href="https://github.com/NanoVNA-Saver/nanovna-saver" target="_blank" style="color: var(--text-secondary); font-weight: 400; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">NanoVNA-Saver App <i data-lucide="external-link"></i></a>
+                        <a href="https://github.com/OneOfEleven/NanoVNA-App" target="_blank" style="color: var(--text-secondary); font-weight: 400; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">NanoVNA Web Client <i data-lucide="external-link"></i></a>
                     </div>
                 </div>
             </div>
@@ -343,3 +346,4 @@
     </script>
 </body>
 </html>
+
